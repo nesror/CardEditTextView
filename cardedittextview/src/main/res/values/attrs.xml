@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardEditTextView_CardEditTextView">
+        <attr name="CardEditTextView_hintSize" format="integer" />
+        <attr name="CardEditTextView_textSize" format="integer" />
+    </declare-styleable>
+</resources>
