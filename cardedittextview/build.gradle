@@ -68,6 +68,7 @@ task sourcesJar(type: Jar) {
     classifier = 'sources'
 }
 task javadoc(type: Javadoc) {
+    options.encoding = "utf-8"
     source = android.sourceSets.main.java.srcDirs
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
@@ -91,6 +92,7 @@ bintray {
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
-        publish = false
+        publish = true
     }
 }
+

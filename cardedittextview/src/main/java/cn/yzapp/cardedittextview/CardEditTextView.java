@@ -14,9 +14,9 @@ import android.widget.EditText;
 
 /**
  * @author: nestor
- * @time: 1/22 022-13:58.
- * @email: nestor@yzapp.cn
- * @desc: 每4位增加一个空格
+ * time: 1/22 022-13:58.
+ * email: nestor@yzapp.cn
+ * desc: 每4位增加一个空格
  */
 public class CardEditTextView extends EditText implements View.OnClickListener {
 

@@ -2,16 +2,15 @@ package cn.yzapp.cardedittextview;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.Gravity;
 import android.widget.EditText;
 
 import cn.yzapp.cardedittextview.Util.ViewUtil;
 
 /**
  * @author: nestor
- * @time: 1/22 022-13:58.
- * @email: nestor@yzapp.cn
- * @desc:
+ * time: 1/22 022-13:58.
+ * email: nestor@yzapp.cn
+ * desc:
  */
 public class CardWatcher implements TextWatcher {
     private String mNewText;

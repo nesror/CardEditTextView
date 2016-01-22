@@ -7,9 +7,9 @@ import java.lang.reflect.Field;
 
 /**
  * @author: nestor
- * @time: 1/22 022-13:58.
- * @email: nestor@yzapp.cn
- * @desc:
+ * time: 1/22 022-13:58.
+ * email: nestor@yzapp.cn
+ * desc:
  */
 public class ViewUtil {
     /**
