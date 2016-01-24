@@ -28,7 +28,7 @@ Maven:
 </dependency>
 ```
 
-[Or download CardEditTextView from Maven Central]()
+[ ![Download](https://api.bintray.com/packages/nesror/maven/CardEditTextView/images/download.svg) ](https://bintray.com/nesror/maven/CardEditTextView/_latestVersion)
 
 Release History, License
 ------------------------
