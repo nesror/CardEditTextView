@@ -15,16 +15,16 @@ Add CardEditTextView to your project
 
 Gradle:
 ```
-    compile 'cn.yzapp.cardedittextview:cardedittextview:1.0.0@aar
+   compile 'cn.yzapp.cardedittextview:cardedittextview:1.0.0@aar'
 ```
 
 Maven:
 ```
 <dependency>
-    <groupId>cn.yzapp.cardedittextview</groupId>
-    <artifactId>cardedittextview</artifactId>
-    <version>1.0.0</version>
-    <type>aar</type>
+   <groupId>cn.yzapp.cardedittextview</groupId>
+   <artifactId>cardedittextview</artifactId>
+   <version>1.0.0</version>
+   <type>aar</type>
 </dependency>
 ```
 
