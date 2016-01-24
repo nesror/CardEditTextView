@@ -12,7 +12,6 @@ CardEditTextView
 
 Add CardEditTextView to your project
 ----------------------------
-EventBus is available on Maven Central. Please ensure that you are using the latest version by [checking here]()
 
 Gradle:
 ```
