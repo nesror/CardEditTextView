@@ -30,11 +30,6 @@ Maven:
 
 [ ![Download](https://api.bintray.com/packages/nesror/maven/CardEditTextView/images/download.svg) ](https://bintray.com/nesror/maven/CardEditTextView/_latestVersion)
 
-Release History, License
+Release History
 ------------------------
 [CHANGELOG](CHANGELOG.md)
-
-CardEditTextView binaries and source code can be used according to the [Apache License, Version 2.0](LICENSE).
-
-More Open Source by nestor
-==============================
