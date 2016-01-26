@@ -21,9 +21,10 @@ Maven:
    <type>aar</type>
 </dependency>
 ```
-[ ![Download](https://api.bintray.com/packages/nesror/maven/CardEditTextView/images/download.svg) ](https://bintray.com/nesror/maven/CardEditTextView/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/nesror/maven/CardEditTextView/images/download.svg) ](https://bintray.com/artifact/download/nesror/maven/cn/yzapp/cardedittextview/cardedittextview/1.0.0/cardedittextview-1.0.0.aar)
 
 Use
+----------------------------
 ````
 <cn.yzapp.cardedittextview.CardEditTextView
         xmlns:cardedit="http://schemas.android.com/apk/res-auto"
