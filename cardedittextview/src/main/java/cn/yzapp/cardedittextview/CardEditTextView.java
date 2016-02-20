@@ -20,8 +20,8 @@ import android.widget.EditText;
  */
 public class CardEditTextView extends EditText implements View.OnClickListener {
 
-    private int mHintSize;
-    private int mTextSize;
+    private float mHintSize;
+    private float mTextSize;
     private CharSequence mHint;
 
     public CardEditTextView(Context context) {
@@ -65,8 +65,8 @@ public class CardEditTextView extends EditText implements View.OnClickListener {
                 R.styleable.CardEditTextView_CardEditTextView,
                 0, 0);
         try {
-            mHintSize = a.getInteger(R.styleable.CardEditTextView_CardEditTextView_CardEditTextView_hintSize, 0);
-            mTextSize = a.getInteger(R.styleable.CardEditTextView_CardEditTextView_CardEditTextView_textSize, 0);
+            mHintSize = a.getDimension(R.styleable.CardEditTextView_CardEditTextView_CardEditTextView_hintSize, 0);
+            mTextSize = a.getDimension(R.styleable.CardEditTextView_CardEditTextView_CardEditTextView_textSize, 0);
         } finally {
             a.recycle();
         }
@@ -100,9 +100,9 @@ public class CardEditTextView extends EditText implements View.OnClickListener {
     /**
      * 设置显示hint时的字体大小
      *
-     * @param size sp
+     * @param size dx
      */
-    public void setHintSize(int size) {
+    public void setHintSize(float size) {
         mHintSize = size;
         setTextSize(size);
     }
@@ -110,9 +110,9 @@ public class CardEditTextView extends EditText implements View.OnClickListener {
     /**
      * 设置显示内容时的字体大小
      *
-     * @param size sp
+     * @param size dx
      */
-    public void setNumSize(int size) {
+    public void setNumSize(float size) {
         mTextSize = size;
     }
 }

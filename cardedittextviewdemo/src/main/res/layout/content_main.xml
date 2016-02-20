@@ -27,6 +27,6 @@
         android:privateImeOptions="验证"
         android:textColor="#fb6d86"
         android:textColorHint="#fda8b7"
-        cardedit:CardEditTextView_hintSize="18"
-        cardedit:CardEditTextView_textSize="26"/>
+        cardedit:CardEditTextView_hintSize="18sp"
+        cardedit:CardEditTextView_textSize="26sp"/>
 </RelativeLayout>

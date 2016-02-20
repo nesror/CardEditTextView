@@ -2,6 +2,7 @@ package cn.yzapp.cardedittextview;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.TypedValue;
 import android.widget.EditText;
 
 import cn.yzapp.cardedittextview.Util.ViewUtil;
@@ -15,14 +16,14 @@ import cn.yzapp.cardedittextview.Util.ViewUtil;
 public class CardWatcher implements TextWatcher {
     private String mNewText;
     private EditText mEditText;
-    private int mHintSize;
-    private int mNumSize;
+    private float mHintSize;
+    private float mNumSize;
 
     public CardWatcher(EditText EditText) {
         mEditText = EditText;
     }
 
-    public CardWatcher(EditText EditText, int hintSize, int numSize) {
+    public CardWatcher(EditText EditText, float hintSize, float numSize) {
         mEditText = EditText;
         mHintSize = hintSize;
         mNumSize = numSize;
@@ -39,11 +40,11 @@ public class CardWatcher implements TextWatcher {
             //mEditText.setCursorVisible(false);
             //mEditText.setHint(mHint);
             //mEditText.setGravity(Gravity.CENTER);
-            if (mHintSize != 0) mEditText.setTextSize(mHintSize);
+            if (mHintSize != 0) mEditText.setTextSize(TypedValue.COMPLEX_UNIT_PX,mHintSize);
         } else {
             //mEditText.setCursorVisible(true);
             //mEditText.setGravity(Gravity.START);
-            if (mNumSize != 0) mEditText.setTextSize(mNumSize);
+            if (mNumSize != 0) mEditText.setTextSize(TypedValue.COMPLEX_UNIT_PX,mNumSize);
         }
 
         String newText = "";
