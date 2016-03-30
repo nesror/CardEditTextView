@@ -115,4 +115,5 @@ public class CardEditTextView extends EditText implements View.OnClickListener {
     public void setNumSize(float size) {
         mTextSize = size;
     }
+
 }

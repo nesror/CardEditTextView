@@ -19,10 +19,6 @@ public class CardWatcher implements TextWatcher {
     private float mHintSize;
     private float mNumSize;
 
-    public CardWatcher(EditText EditText) {
-        mEditText = EditText;
-    }
-
     public CardWatcher(EditText EditText, float hintSize, float numSize) {
         mEditText = EditText;
         mHintSize = hintSize;
@@ -37,14 +33,9 @@ public class CardWatcher implements TextWatcher {
     @Override
     public void onTextChanged(CharSequence text, int start, int lengthBefore, int lengthAfter) {
         if (text.length() == 0) {
-            //mEditText.setCursorVisible(false);
-            //mEditText.setHint(mHint);
-            //mEditText.setGravity(Gravity.CENTER);
-            if (mHintSize != 0) mEditText.setTextSize(TypedValue.COMPLEX_UNIT_PX,mHintSize);
+            if (mHintSize != 0) mEditText.setTextSize(TypedValue.COMPLEX_UNIT_PX, mHintSize);
         } else {
-            //mEditText.setCursorVisible(true);
-            //mEditText.setGravity(Gravity.START);
-            if (mNumSize != 0) mEditText.setTextSize(TypedValue.COMPLEX_UNIT_PX,mNumSize);
+            if (mNumSize != 0) mEditText.setTextSize(TypedValue.COMPLEX_UNIT_PX, mNumSize);
         }
 
         String newText = "";
@@ -57,11 +48,12 @@ public class CardWatcher implements TextWatcher {
                 newText = newText + " ";
             }
         }
+        int selection = Math.min(mEditText.getSelectionStart(), mEditText.getSelectionEnd()) + (newText.length() - text.toString().length());
 
         if (mNewText == null || !newText.equals(mNewText)) {
             mNewText = newText;
             mEditText.setText(newText);
-            mEditText.setSelection(newText.length());
+            mEditText.setSelection(selection);
         }
     }
 
