@@ -53,7 +53,7 @@ public class CardWatcher implements TextWatcher {
         if (mNewText == null || !newText.equals(mNewText)) {
             mNewText = newText;
             mEditText.setText(newText);
-            mEditText.setSelection(selection);
+            mEditText.setSelection(selection < 0 ? 0 : selection);
         }
     }
 
